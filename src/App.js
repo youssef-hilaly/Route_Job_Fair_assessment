@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Dashboard from './components/pages/Dashboard/Dashboard';
 import Invoices from './components/pages/Invoices/Invoices';
 import LinePage from './components/pages/Charts/Line/LinePage';
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/', element: <Layout />, children: [
       { path: '', element: <Dashboard /> },
